@@ -1,0 +1,13 @@
+/**
+ * @name midnight-blurple
+ * @description A blurple, dark and rounded discord theme.
+ * @author yolan.design (forked from refact0r)
+ * @version 1.6.2
+ * @website https://github.com/yolanare/midnight-discord-blurple
+ * @source https://github.com/refact0r/midnight-discord/blob/master/midnight.theme.css
+ * @authorLink https://yolan.design
+*/
+
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
+
+@import url('https://yolanare.github.io/midnight-discord-blurple/midnight-blurple.css');
