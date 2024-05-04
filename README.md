@@ -13,13 +13,12 @@ forked from the [midnight-discord](https://github.com/refact0r/midnight-discord)
 
 #### betterdiscord (or client with local theme folder)
 
-1. download `midnight-blurple.theme.css` from this repo.
+1. download [`midnight-blurple.theme.css`](https://yolanare.github.io/midnight-discord-blurple/midnight-blurple.theme.css) from this repo
 2. put the file into your theme folder. (there should be a button to open the theme folder in theme settings)
-3. (optional) customize the theme in `midnight-blurple.theme.css`.
 
 #### install through link
 
-add `https://yolanare.github.io/midnight-discord-blurple/midnight.css` to your theme import links.
+add `https://yolanare.github.io/midnight-discord-blurple/midnight.css` to your theme import links
 
 ## credits
 
