@@ -1,44 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+ * forked from https://github.com/refact0r/midnight-discord
+ * edits by yolan.design
+*/
 
 /* customize things here */
 :root {
 	/* font, change to 'gg sans' for default discord font*/
-	--font: 'figtree';
+	--font: 'gg sans';
 
 	/* top left corner text */
-	--corner-text: 'Midnight';
+	--corner-text: 'Discord';
 
 	/* color of status indicators and window controls */
-	--online-indicator: var(--accent-2); /* change to #23a55a for default green */
-	--dnd-indicator: hsl(340, 60%, 60%); /* change to #f13f43 for default red */
-	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
-	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
+	--online-indicator: #23a55a; /* change to #23a55a for default green */
+	--dnd-indicator: #f13f43; /* change to #f13f43 for default red */
+	--idle-indicator: #f0b232; /* change to #f0b232 for default yellow */
+	--streaming-indicator: #593695; /* change to #593695 for default purple */
 
 	/* accent colors */
-	--accent-1: hsl(190, 70%, 60%); /* links */
-	--accent-2: hsl(190, 70%, 48%); /* general unread/mention elements */
-	--accent-3: hsl(190, 70%, 42%); /* accent buttons */
-	--accent-4: hsl(190, 70%, 36%); /* accent buttons when hovered */
-	--accent-5: hsl(190, 70%, 30%); /* accent buttons when clicked */
-	--mention: hsla(190, 80%, 52%, 0.1); /* mentions & mention messages */
-	--mention-hover: hsla(190, 80%, 52%, 0.05); /* mentions & mention messages when hovered */
+	--accent-1: #6875ff; /* links */
+	--accent-2: var(--red-430); /* general unread/mention elements */
+	--accent-3: #404eed; /* accent buttons */
+	--accent-4: #5865f2; /* accent buttons when hovered */
+	--accent-5: #3442d9; /* accent buttons when clicked */
 
 	/* text colors */
-	--text-0: white; /* text on colored elements */
-	--text-1: var(--text-2); /* other normally white text */
-	--text-2: hsl(220, 25%, 70%); /* headings and important text */
-	--text-3: hsl(220, 15%, 60%); /* normal text */
-	--text-4: hsl(220, 15%, 40%); /* icon buttons and channels */
-	--text-5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
+	--text-0: var(--text-1); /* text on colored elements */
+	--text-1: hsl(240, 40%, 95%); /* bright text on colored elements */
+	--text-2: hsl(240, 40%, 84%); /* headings and important text */
+	--text-3: hsl(240, 20%, 87%); /* normal text */
+	--text-4: hsl(240, 13%, 65%); /* icon buttons and channels */
+	--text-5: hsl(240, 13%, 45%); /* muted channels/chats and timestamps */
 
 	/* background and dark colors */
-	--bg-1: hsl(220, 15%, 20%); /* dark buttons when clicked */
-	--bg-2: hsl(220, 15%, 16%); /* dark buttons */
-	--bg-3: hsl(220, 15%, 13%); /* spacing, secondary elements */
-	--bg-4: hsl(220, 15%, 10%); /* main background color */
-	--hover: hsla(230, 20%, 40%, 0.1); /* channels and buttons when hovered */
-	--active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
-	--message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
+	--bg-1: hsl(234, 13%, 31%); /* dark buttons when clicked */
+	--bg-2: hsl(237, 16%, 23%); /* dark buttons */
+	--bg-3: hsl(240, 18%, 8%); /* spacing, secondary elements */
+	--bg-4: hsl(240, 19%, 13.5%); /* main background color */
+	--message-hover: hsla(240, 0%, 0%, 0.1); /* messages when hovered */
+
+	--hover-v-hsl:  237, 45%, 55%;
+	--active-v-hsl: 235, 35%, 45%;
+	--hover: hsla(var(--hover-v-hsl), 0.125); /* channels and buttons when hovered */
+	--active: hsla(var(--active-v-hsl), 0.25); /* channels and buttons when clicked or selected */
+	--mention-hover: hsla(var(--hover-v-hsl), 0.1); /* mentions & mention messages */
+	--mention: hsla(var(--active-v-hsl), 0.17); /* mentions & mention messages */
+	/* --mention: hsla(242, 78%, 67%, 0.1); */
+	/* --mention-hover: hsla(242, 70%, 58%, 0.09); */
 
 	/* amount of spacing and padding */
 	--spacing: 12px;
@@ -46,31 +54,32 @@
 	/* animations */
 	/* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
 	--list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
-	--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
-	--moon-spin-transition: 0.4s ease; /* moon icon spin */
-	--icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
+	--unread-bar-transition: 0.235s ease 0.1s; /* unread bar moving into view transition */
+	--moon-spin-transition: 0.65s cubic-bezier(0.2, 0.5, 0.05, 0.975); /* moon icon spin */
+	--icon-spin-transition: 0.8s cubic-bezier(0.35, 0.65, 0.1, 0.95); /* round icon button spin (settings, emoji, etc.) */
 
 	/* corner roundness (border-radius) */
-	--roundness-xl: 22px; /* roundness of big panel outer corners */
-	--roundness-l: 20px; /* popout panels */
-	--roundness-m: 16px; /* smaller panels, images, embeds */
+	--roundness-xl: 16px; /* roundness of big panel outer corners */
+	--roundness-l: 16px; /* popout panels */
+	--roundness-m: 12px; /* smaller panels, images, embeds */
 	--roundness-s: 12px; /* members, settings inputs */
 	--roundness-xs: 10px; /* channels, buttons */
 	--roundness-xxs: 8px; /* searchbar, small elements */
 
 	/* direct messages moon icon */
 	/* change to block to show, none to hide */
-	--discord-icon: none; /* discord icon */
-	--moon-icon: block; /* moon icon */
-	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* custom icon url */
+	--discord-icon: block; /* discord icon */
+	--moon-icon: none; /* moon icon */
+	--moon-icon-url: none; /* custom icon url */
 	--moon-icon-size: auto;
 
 	/* filter uncolorable elements to fit theme */
 	/* (just set to none, they're too much work to configure) */
-	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
-	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
-	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
+	/* --login-bg-filter: none; */ /* login background artwork */
+	--green-to-accent-3-filter: none; /* add friend page explore icon */
+	--blurple-to-accent-3-filter: none; /* add friend page school icon */
 }
+
 
 /* change fonts (edit the variables above, not this part) */
 :root {
@@ -103,21 +112,25 @@
 #app-mount .container__6b2e5 /* browse channels inner */,
 .chat__52833.background__2fff8 /* server guide body */,
 #app-mount .scrollerContainer_dda72c /* channels and roles customize */,
-.shop_b31ed2 /* shop */,
-.wrapper__6bf2d.minimum__7f356 /* private call */,
+.shop_b31ed2 /* shop *//* ,
+.wrapper__6bf2d.minimum__7f356 */ /* private call */,
 .container_ec5ce2, .container__33507 /* emoji/sticker and gif picker searchbars */,
 #app-mount .uploadModal__6eb75 /* upload modal */,
-.uploadModal__6eb75 .footer_f06dbb /* upload modal footer */ {
+.uploadModal__6eb75 .footer_f06dbb /* upload modal footer */  {
 	background: var(--bg-4);
 }
+.callContainer__1477d {
+	background-color: transparent;
+}
 .mainCard__0ec2c /* forum post */,
-.navRow_bb8efc[data-theme=dark] /* add new account bottom */ {
+.navRow_bb8efc[data-theme=dark] /* add new account bottom */,
+.searchBar__310d8 /* search bar Friends */ {
 	background: var(--bg-3);
 }
 .folderIconWrapper__11165[style="background-color: rgba(88, 101, 242, 0.4);"] /* default color closed folders */ {
 	background: var(--bg-3) !important;
 }
-.folder__17546.hover__043de /* folder opened on hover */, 
+.folder__17546.hover__043de /* folder opened on hover */,
 #app-mount .outer_a41cf3.interactive__46c44:hover, #app-mount .outer_a41cf3.active__76f42 /* friend activity cards on hover */ {
 	background: var(--bg-2);
 }
@@ -145,7 +158,7 @@ div.message_ccca67.replying__38514::before /* change reply message bar to neutra
 	background: var(--text-2);
 }
 .activeButtonChild__58171 /* send button */ {
-	color: var(--accent-2);
+	color: var(--accent-4);
 }
 .container_debb33 /* user panel button strikethroughs */,
 .numberBadge__40d6f /* unread number badge */,
@@ -187,13 +200,12 @@ path[fill='var(--white-500)'] {
 .lookFilled__950dd.colorRed__5a617 /* red buttons */,
 .lookFilled__950dd.colorYellow__818c3 /* yellow buttons */,
 .bar_edc096 /* NEW unread pill */,
-.wrapper__8436d:hover .childWrapper_a6ce15, /* default server icon text */ 
+.wrapper__8436d:hover .childWrapper_a6ce15, /* default server icon text */
 .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15 /* default server icon text */,
 .colorDefault_e361cf.focused_dcafb9 /* menu option hover */,
 .colorDefault_e361cf.focused_dcafb9 .caret_ce50ce /* popup menu hover caret */,
 .colorDefault_e361cf:active:not(.hideInteraction__0b569) /* menu option active */,
 .colorDefault_e361cf:active:not(.hideInteraction__0b569) .caret_ce50ce /* menu option active */,
-.tabBar__73938 .addFriend__4c0a2.addFriend__4c0a2.addFriend__4c0a2 /* add friend button */,
 #app-mount .button__33db6 /* notice banner button */,
 .interactive:hover /* mention hover */,
 .uploadIcon_d35ec2 /* profile upload image */,
@@ -210,6 +222,14 @@ path[fill='var(--white-500)'] {
 .vcd-screen-picker-radio[data-checked="true"] .defaultColor__30336 /* vencord stream resolution picker buttons when active */,
 .icon__493c1 /* streaming activity type icon  */ {
 	color: var(--text-0);
+}
+.tabBar__73938 .addFriend__4c0a2.addFriend__4c0a2.addFriend__4c0a2 /* add friend button */ {
+	color: var(--text-positive);
+	background: transparent;
+}
+.tabBar__73938 .addFriend__4c0a2.addFriend__4c0a2.addFriend__4c0a2[aria-selected=true] /* add friend button active */ {
+	color: var(--text-0);
+	background: var(--accent-5);
 }
 #app-mount .button__33db6, .theme-light .button__33db6 /* notice banner button */,
 .lookOutlined__014b5.colorWhite__0033e /* server banner buttons */ {
@@ -265,22 +285,22 @@ path[fill='var(--white-500)'] {
 .gifIcon__4c50e /* profile upload image gif chooser */ {
 	background-color: white;
 }
-.controlIcon__73723 /* fix video maximize button */ {
+.videoButton__78017 .controlIcon__73723 /* fix video maximize button */ {
 	color: var(--text-1);
 	opacity: 0.6;
 }
-.controlIcon__73723:hover /* fix video maximize button hover */ {
+.videoButton__78017 .controlIcon__73723:hover /* fix video maximize button hover */ {
 	opacity: 1;
 }
 ::selection {
-	background: var(--accent-4);
+	background: var(--accent-5);
 	color: var(--text-0);
 }
 .lookFilled__9c1ef.select_fe2671 {
 	border: none;
 }
 .checkbox_fcf2ad /* channel checkboxes */ {
-	border-color: var(--text-4) !important;
+	border-color: var(--bg-1) !important;
 }
 .newBadge__40645 /* fix forum new badge */ {
 	color: var(--accent-2);
@@ -412,8 +432,8 @@ a[href="https://support.discord.com"] /* hide help */
 .wrapper__6bf2d.fullScreen_b3f0af .callContainer__1477d /* fullscreen vc */ {
 	margin-top: var(--spacing);
 }
-.notice__5fd4c /* banner notice */,
-.wrapper__6bf2d.minimum__7f356 /* private call */ {
+.notice__5fd4c /* banner notice *//* ,
+.wrapper__6bf2d.minimum__7f356 */ /* private call */ {
 	margin-bottom: var(--spacing);
 }
 /* fix padding */
@@ -433,7 +453,7 @@ a[href="https://support.discord.com"] /* hide help */
 .shop_b31ed2 /* discord shop */,
 .container_ec90d4 /* family center */,
 .container__694a1 /* message request */,
-#app-mount .callContainer__1477d /* vc */, 
+#app-mount .callContainer__1477d /* vc */,
 .chat__52833 /* general chat container (for browse channels page */,
 .animatedContainer__0e828 /* server image card */,
 .notice__5fd4c /* banner notice */,
@@ -540,6 +560,7 @@ button.button__581d0 /* small buttons */,
 }
 .wrapper__53064 /* mentions */,
 .searchBar__5a20a /* search bar */,
+.searchBar__310d8 /* search bar Friends */,
 .searchBar__621ec .searchBarComponent__8f95f /* find conversation search bar */,
 .topPill__63ad4 .item__48dda /* friend online/categories */ {
 	border-radius: var(--roundness-xxs);
@@ -609,7 +630,7 @@ button.button__581d0 /* small buttons */,
 .platform-win .container_d1f8f5 {
 	margin-top: 0;
 }
-/* UNCOMMENT if you want to make panels evenly sized on macos 
+/* UNCOMMENT if you want to make panels evenly sized on macos
 .platform-osx .wrapper__216eb {
     margin-top: 0;
 }
@@ -620,7 +641,7 @@ button.button__581d0 /* small buttons */,
 /* top corner title */
 [class^='wordmarkWindows'] {
 	padding: 4px var(--spacing);
-}
+}/*
 [class^='wordmarkWindows'] > svg {
 	display: none;
 }
@@ -636,47 +657,17 @@ button.button__581d0 /* small buttons */,
 	color: var(--text-5);
 	transform: scaleX(1.2);
 	margin-left: 6px;
-}
-
-/* top bar height */
-[class^='typeWindows'] {
-	height: calc(var(--spacing) + 8px);
-}
+} */
 
 /* window controls */
-[class^='winButton'] > svg {
-	display: none;
-}
 [class^='winButton'] {
-	background: none !important;
-	top: 0;
-	width: calc(var(--spacing) + 8px);
-	height: calc(var(--spacing) + 8px);
-	margin: -2px 4px 0px 0px;
+	padding: 0 var(--spacing);
 }
-[class^='winButtonClose'] {
-	margin: -2px calc(var(--spacing) - 4px) 0px 0px;
+[class^='winButtonClose']:hover {
+	background-color: var(--red-430) !important;
 }
-[class^='winButton']::after {
-	content: '';
-	height: 12px;
-	width: 12px;
-	border-radius: 12px;
-}
-[class^='winButton']:hover::after {
-	filter: brightness(0.8);
-}
-[class^='winButton']:active::after {
-	transform: scale(0.9);
-}
-[class^='winButtonClose']::after {
-	background-color: var(--dnd-indicator) !important;
-}
-[class^='winButtonMinMax']:nth-child(3)::after {
-	background-color: var(--online-indicator) !important;
-}
-[class^='winButtonMinMax']:nth-child(4)::after {
-	background-color: var(--idle-indicator) !important;
+[class^='winButtonClose']:hover:active {
+	background-color: var(--red-500) !important;
 }
 
 /* custom dm button moon icon */
@@ -728,6 +719,10 @@ button.button__581d0 /* small buttons */,
 }
 .divider__855e3 .content__7191e {
 	margin-top: -3px;
+
+	/* better padding */
+	padding-left:  15px;
+	padding-right: 15px;
 }
 .endCap__95d53 {
 	margin-top: -1px;
@@ -759,20 +754,20 @@ button.button__581d0 /* small buttons */,
 .side_b4b3f6 .item__48dda /* settings */ {
 	transition: margin-left var(--list-item-transition);
 }
-.wrapper__612a5:hover .link_ddbb36,
+/* .wrapper__612a5:hover .link_ddbb36,
 .side_b4b3f6 .item__48dda:hover {
 	margin-left: 10px;
 }
 .container_a48b21:hover,
 .channel__0aef5:hover {
 	margin-left: 18px;
-}
+} */
 
 /* spin hover animations */
 button.button_ae40a4 /* make user panel buttons round */ {
 	border-radius: 50%;
 }
-.button_ae40a4:last-child .contents__322f4 /* settings button */, 
+.button_ae40a4:last-child .contents__322f4 /* settings button */,
 .attachButton__56f98 .attachButtonInner__84c26 /* upload button */,
 .emojiButton_b63c38 .contents__322f4 /* emoji button */,
 .closeButton__8177f /* settings exit button */,
@@ -780,11 +775,14 @@ button.button_ae40a4 /* make user panel buttons round */ {
 	transition: transform var(--icon-spin-transition);
 }
 .button_ae40a4:last-child:hover .contents__322f4,
-.attachButton__56f98:hover .attachButtonInner__84c26,
-.emojiButton_b63c38:hover .contents__322f4,
+.emojiButton_b63c38:hover .contents__322f4/* ,
 .closeButton__8177f:hover,
-.contents__322f4:hover > .closeIcon__16020 {
+.contents__322f4:hover > .closeIcon__16020 */ {
 	transform: rotate(360deg);
+}
+.attachButton__56f98:hover .attachButtonInner__84c26,
+.attachButton__56f98[aria-expanded="true"] .attachButtonInner__84c26 {
+	transform: rotate(270deg) scale(1.125);
 }
 
 /* hide unread bar on hover */
@@ -939,7 +937,7 @@ html.theme-light,
 	--chat-border: var(--primary-700);
 	--chat-input-container-background: var(--primary-600);
 	--chat-swipe-to-reply-background: var(--primary-660);
-	--control-brand-foreground: var(--accent-2);
+	--control-brand-foreground: var(--accent-4);
 	--control-brand-foreground-new: var(--brand-360);
 	--creator-revenue-icon-gradient-end: var(--teal-430);
 	--creator-revenue-icon-gradient-start: var(--teal-360);
@@ -1126,15 +1124,42 @@ html.theme-light,
 	--brand-260: var(--bg-1); /* new badge */
 	--brand-430: var(--accent-3);
 	--brand-500: var(--accent-3);
-	--brand-530: var(--accent-4);
+	--brand-530: var(--accent-3);
 	--brand-560: var(--accent-4);
 	--brand-600: var(--accent-5);
 
 	--green-330: var(--accent-1);
-	--green-360: var(--accent-3);
-	--green-430: var(--accent-4);
+	--green-360: var(--accent-4);
+	--green-430: var(--accent-3);
 	--green-500: var(--accent-4);
 	--green-530: var(--accent-5);
+
+    --red-100-hsl: 330 calc(var(--saturation-factor, 1) * 75%) 88.4%;
+    --red-130-hsl: 0 calc(var(--saturation-factor, 1) * 83.3%) 87.6%;
+    --red-160-hsl: 0 calc(var(--saturation-factor, 1) * 90.9%) 85.7%;
+    --red-200-hsl: 342 calc(var(--saturation-factor, 1) * 88.9%) 82.9%;
+    --red-230-hsl: 343 calc(var(--saturation-factor, 1) * 85.2%) 79.4%;
+    --red-260-hsl: 349 calc(var(--saturation-factor, 1) * 89%) 75.7%;
+    --red-300-hsl: 349 calc(var(--saturation-factor, 1) * 91.4%) 71.8%;
+    --red-330-hsl: 349 calc(var(--saturation-factor, 1) * 91.3%) 67.5%;
+    --red-345-hsl: 348 calc(var(--saturation-factor, 1) * 92.9%) 62.4%;
+    --red-360-hsl: 348 calc(var(--saturation-factor, 1) * 91.8%) 56.5%;
+    --red-400-hsl: 349 calc(var(--saturation-factor, 1) * 87.3%) 49.8%;
+    	--red-430-hsl: 348 calc(var(--saturation-factor, 1) * 68.8%) 43.5%;
+    	--red-460-hsl: 348 calc(var(--saturation-factor, 1) * 59.1%) 46.1%;
+    	--red-500-hsl: 348 calc(var(--saturation-factor, 1) * 68%) 33%;
+    --red-530-hsl: 349 calc(var(--saturation-factor, 1) * 63.4%) 30%;
+    --red-560-hsl: 349 calc(var(--saturation-factor, 1) * 63.9%) 20%;
+    --red-600-hsl: 349 calc(var(--saturation-factor, 1) * 64.7%) 20%;
+    --red-630-hsl: 349 calc(var(--saturation-factor, 1) * 65.6%) 20%;
+    --red-660-hsl: 349 calc(var(--saturation-factor, 1) * 65.1%) 20%;
+    --red-700-hsl: 348 calc(var(--saturation-factor, 1) * 66.7%) 18.8%;
+    --red-730-hsl: 349 calc(var(--saturation-factor, 1) * 66.7%) 16.5%;
+    --red-760-hsl: 349 calc(var(--saturation-factor, 1) * 70.3%) 14.5%;
+    --red-800-hsl: 349 calc(var(--saturation-factor, 1) * 68.8%) 12.5%;
+    --red-830-hsl: 348 calc(var(--saturation-factor, 1) * 67.3%) 10.8%;
+    --red-860-hsl: 0 calc(var(--saturation-factor, 1) * 66.7%) 9.4%;
+    --red-900-hsl: 0 calc(var(--saturation-factor, 1) * 70%) 7.8%;
 
 	--brand-experiment-15a: var(--mention); /* background of reacted reactions */
 	--brand-360: var(--accent-2); /* invite text */
@@ -1150,4 +1175,17 @@ html.theme-light,
 * {
 	scrollbar-color: unset !important;
 	scrollbar-width: unset !important;
+}
+
+
+/*-- additions by yolan --*/
+
+/* profile popout border radius */
+.userProfileOuter__35e59 {
+	border-radius: var(--roundness-l);
+}
+
+/* soundboard buttons */
+.soundButton__845c7 {
+	background: var(--bg-4);
 }
