@@ -17,7 +17,7 @@ forked from the [midnight-discord](https://github.com/refact0r/midnight-discord)
 
 #### install through link
 
-add `https://yolanare.github.io/midnight-discord-blurple/midnight-blurple.css` to your theme import links.
+add `https://yolanare.github.io/midnight-discord-blurple/midnight.css` to your theme import links.
 
 ## credits
 
