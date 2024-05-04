@@ -1,3 +1,5 @@
+<img width=800 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple-poster.jpg">
+
 # midnight-blurple
 
 a darkened discord theme with rounded corners and using blurple as accent color.
