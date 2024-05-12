@@ -833,6 +833,21 @@ button.button_ae40a4 /* make user panel buttons round */ {
 	margin-bottom: -12px;
 }
 
+/* prettier dm call messages */
+.groupStart__7b93c.isSystemMessage__0f7c5 {
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+}
+.groupStart__7b93c.isSystemMessage__0f7c5 .contents_d3ae0d {
+	margin: 8px 0;
+	padding: 16px;
+	padding-left: var(--custom-message-margin-left-content-cozy);
+	box-sizing: border-box;
+	background-color: var(--bg-3);
+	border-radius: 999px;
+}
+
+
 .theme-light {
 	--text-link: var(--accent-5);
 }
