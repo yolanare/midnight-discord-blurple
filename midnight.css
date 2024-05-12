@@ -480,7 +480,7 @@ a[href="https://support.discord.com"] /* hide help */
 .messagesPopoutWrap__10dd1 /* inbox, pinned messages popout */,
 .container_f93da8 /* thread popout */,
 .menu__088f7 .item__183e8d /* server option popout */,
-.userPopoutOuter__3884e /* user profile popout */,
+.userPopoutOuter_d67f56 /* user profile popout */,
 .root_ba16f0 /* user profile modal */,
 .contentWrapper_e0bb2c /* emoji, sticker, gif pickers */,
 .footer_e0b400 /* edit modal footer */,
@@ -492,11 +492,11 @@ a[href="https://support.discord.com"] /* hide help */
 .banner_b7f1fb /* user profile top when edit */ {
 	border-radius: calc(var(--roundness-l) - 4px) calc(var(--roundness-l) - 4px) 0 0;
 }
-.userPopoutInner_e90432:before /* user profile popout bottom */,
+.userPopoutInner_ac0960:before /* user profile popout bottom */,
 .userProfileModalInner__99b1e:before /* user profile modal bottom */ {
 	border-radius: calc(var(--roundness-l) - 4px);
 }
-.overlayBackground__2666e /* user profile inner */ {
+.overlayBackground__345c9 /* user profile inner */ {
 	border-radius: var(--roundness-s);
 }
 .menu__088f7 /* general popouts */,
@@ -686,6 +686,7 @@ button.button__581d0 /* small buttons */,
 	-webkit-mask-repeat: none;
 }
 .wrapper__8436d:hover .childWrapper_a6ce15::before {
+	/* prettier-ignore */
 	transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
 	transform: rotate(0deg) scale(1);
 }
@@ -711,6 +712,11 @@ button.button__581d0 /* small buttons */,
 	background-color: transparent !important;
 	background-size: cover;
 } */
+
+/* vencord spotify player support */
+#vc-spotify-player {
+	--vc-spotify-green: var(--accent-1);
+}
 
 /* improve unread divider */
 .divider__855e3 {
@@ -1127,6 +1133,8 @@ html.theme-light,
 	--brand-530: var(--accent-3);
 	--brand-560: var(--accent-4);
 	--brand-600: var(--accent-5);
+
+	--brand-experiment-400: var(--accent-3); /* loading spinning animation element */
 
 	--green-330: var(--accent-1);
 	--green-360: var(--accent-4);
