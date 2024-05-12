@@ -116,7 +116,8 @@
 .wrapper__6bf2d.minimum__7f356 */ /* private call */,
 .container_ec5ce2, .container__33507 /* emoji/sticker and gif picker searchbars */,
 #app-mount .uploadModal__6eb75 /* upload modal */,
-.uploadModal__6eb75 .footer_f06dbb /* upload modal footer */  {
+.uploadModal__6eb75 .footer_f06dbb /* upload modal footer */,
+.soundButton__845c7 /* soundboard buttons */ {
 	background: var(--bg-4);
 }
 .callContainer__1477d {
@@ -715,7 +716,7 @@ button.button__581d0 /* small buttons */,
 
 /* vencord spotify player support */
 #vc-spotify-player {
-	--vc-spotify-green: var(--accent-1);
+	--vc-spotify-green: var(--accent-3);
 }
 
 /* improve unread divider */
@@ -1183,17 +1184,4 @@ html.theme-light,
 * {
 	scrollbar-color: unset !important;
 	scrollbar-width: unset !important;
-}
-
-
-/*-- additions by yolan --*/
-
-/* profile popout border radius */
-.userProfileOuter__35e59 {
-	border-radius: var(--roundness-l);
-}
-
-/* soundboard buttons */
-.soundButton__845c7 {
-	background: var(--bg-4);
 }
