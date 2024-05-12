@@ -478,7 +478,7 @@ a[href="https://support.discord.com"] /* hide help */
 }
 
 /* more rounded corners */
-.messagesPopoutWrap__10dd1 /* inbox, pinned messages popout */,
+.messagesPopoutWrap__10dd1 /* inbox, pinned messages popout */, .recentMentionsPopout__40c54 ,
 .container_f93da8 /* thread popout */,
 .menu__088f7 .item__183e8d /* server option popout */,
 .userPopoutOuter_d67f56 /* user profile popout */,
@@ -585,29 +585,47 @@ button.button__581d0 /* small buttons */,
 .base_c0676e {
 	margin-left: var(--spacing);
 }
-.guilds__2b93a::after /* add bottom scroll shadow */,
-.membersWrap__5ca6b::after {
+/* add scroll shadow */
+.guilds__2b93a::after, .guilds__2b93a::before,
+.membersWrap__5ca6b::after, .chatContent_f087cb + .container_f79ab4::before,
+.sidebar_e031be > .container__7e23c::after, .sidebar_e031be > .container__7e23c::before,
+.privateChannels__9b518::after, .privateChannels__9b518::before
+/* .chat__52833 > .wrapper__6bf2d ~ .content__01e65::before */ /* dm chat during call */
+{
 	content: '';
+	z-index: 1000; /* under popout (1002) */
 	position: absolute;
-	background: linear-gradient(transparent 85%, var(--bg-4) 100%);
-	bottom: 0;
 	left: 0;
 	right: 0;
 	height: 100px;
 	pointer-events: none;
+	background: transparent;
+}
+/* bottom */
+.guilds__2b93a::after,
+.membersWrap__5ca6b::after,
+.sidebar_e031be > .container__7e23c::after,
+.privateChannels__9b518::after {
+	bottom: 0;
+	background: linear-gradient(transparent 85%, var(--bg-4) 100%);
 	border-radius: 0 0 var(--roundness-xl) var(--roundness-xl);
 }
-.guilds__2b93a::before /* add top scroll shadow */ {
-	content: '';
-	position: absolute;
-	background: linear-gradient(var(--bg-4) 0%, transparent 15%);
+/* top */
+.guilds__2b93a::before,
+.chatContent_f087cb + .container_f79ab4::before,
+.sidebar_e031be > .container__7e23c::before,
+.privateChannels__9b518::before {
 	top: 0;
-	left: 0;
-	right: 0;
-	height: 100px;
-	pointer-events: none;
-	z-index: 1;
+	background: linear-gradient(var(--bg-4) 0%, transparent 15%);
 }
+.chatContent_f087cb + .container_f79ab4 { position: relative; }
+.sidebar_e031be > .container__7e23c::before {
+	top: calc(12px * 2 + 24px); /* header height */
+}
+.privateChannels__9b518::before {
+	top: calc(48px - 3px); /* header height + offset to avoid overlapping "Friends" button */
+}
+
 .childWrapper_a6ce15 {
 	background: var(--bg-3);
 }
