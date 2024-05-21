@@ -852,17 +852,20 @@ button.button_ae40a4 /* make user panel buttons round */ {
 }
 
 /* prettier dm call messages */
-.groupStart__7b93c.isSystemMessage__0f7c5 {
+.message_ccca67.isSystemMessage__0f7c5 {
 	padding-left: 16px !important;
 	padding-right: 16px !important;
 }
-.groupStart__7b93c.isSystemMessage__0f7c5 .contents_d3ae0d {
+.message_ccca67.isSystemMessage__0f7c5 .contents_d3ae0d {
 	margin: 8px 0;
 	padding: 16px;
 	padding-left: var(--custom-message-margin-left-content-cozy);
 	box-sizing: border-box;
-	background-color: var(--bg-3);
+	background-color: hsl(var(--black-500-hsl)/.2);
 	border-radius: 999px;
+}
+.message_ccca67.isSystemMessage__0f7c5.mentioned_fa6fd2 .contents_d3ae0d {
+	background-color: hsl(var(--black-500-hsl)/.3);
 }
 
 
