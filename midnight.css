@@ -131,9 +131,11 @@
 .folderIconWrapper__11165[style="background-color: rgba(88, 101, 242, 0.4);"] /* default color closed folders */ {
 	background: var(--bg-3) !important;
 }
-.folder__17546.hover__043de /* folder opened on hover */,
-#app-mount .outer_a41cf3.interactive__46c44:hover, #app-mount .outer_a41cf3.active__76f42 /* friend activity cards on hover */ {
+.folder__17546.hover__043de /* folder opened on hover */ {
 	background: var(--bg-2);
+}
+#app-mount .outer_a41cf3.interactive__46c44:hover, #app-mount .outer_a41cf3.active__76f42 /* friend activity cards on hover */ {
+	background: hsl(var(--black-500-hsl)/.25);
 }
 #app-mount .searchAnswer__2ccaf, /* search filter answer */
 #app-mount .searchFilter_dbda51 /* search filter */ {
