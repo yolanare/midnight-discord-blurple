@@ -141,6 +141,16 @@
 #app-mount .searchFilter_dbda51 /* search filter */ {
 	background: var(--bg-1);
 }
+.message_ccca67.isSystemMessage__0f7c5 .contents_d3ae0d, /* dm call */
+.wrapperAudio__178e9 /* audio file outer bg */ {
+	background-color: hsl(var(--black-500-hsl)/.225) !important;
+}
+.message_ccca67.isSystemMessage__0f7c5.mentioned_fa6fd2 .contents_d3ae0d /* dm call mention */ {
+	background-color: hsl(var(--black-500-hsl)/.35) !important;
+}
+.wrapperAudio__178e9 { /* audio file border */
+	border-color: transparent !important;
+}
 .newChannel__1bbcf /* new channel */ {
 	background: var(--bg-1) !important;
 }
@@ -863,11 +873,7 @@ button.button_ae40a4 /* make user panel buttons round */ {
 	padding: 16px;
 	padding-left: var(--custom-message-margin-left-content-cozy);
 	box-sizing: border-box;
-	background-color: hsl(var(--black-500-hsl)/.2);
 	border-radius: 999px;
-}
-.message_ccca67.isSystemMessage__0f7c5.mentioned_fa6fd2 .contents_d3ae0d {
-	background-color: hsl(var(--black-500-hsl)/.3);
 }
 
 /* animated */
