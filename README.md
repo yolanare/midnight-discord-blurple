@@ -6,6 +6,14 @@ a darkened discord theme with rounded corners and using blurple as accent color.
 
 forked from the [midnight-discord](https://github.com/refact0r/midnight-discord) theme because I wanted to add my own fixes and UI magic
 
+<img width=800 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--friends-home.png"><br>*Zoom level at 125%*
+
+## nice things
+
+| description | preview |
+|:-|:-|
+| `animated context menu`<br>a quick animation so that it looks cool<br>and not get in the way | <img width=400 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--context-menu-animation.gif"><br>*Zoom level at 125%, colors are fudged because of the gif format* |
+
 ## install
 
 > [!IMPORTANT]  
