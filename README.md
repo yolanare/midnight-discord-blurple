@@ -12,7 +12,8 @@ forked from the [midnight-discord](https://github.com/refact0r/midnight-discord)
 
 | description | preview |
 |:-|:-|
-| `animated context menu`<br>a quick animation so that it looks cool<br>and not get in the way | <img width=400 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--context-menu-animation.gif"><br>*Zoom level at 125%, colors are fudged because of the gif format* |
+| `animated context menu`<br>a quick animation so that it looks cool<br>and not get in the way | <img width=360 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--context-menu-animation.gif"><br>*Zoom level at 125%, colors are fudged because of the gif format* |
+| `elevated dm call messages`<br>to differentiate them from the other messages | <img width=480 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--dm-call-message.png"><br>*Zoom level at 125%* |
 
 ## install
 
