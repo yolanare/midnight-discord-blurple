@@ -1,4 +1,4 @@
-<img width=800 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--poster.jpg">
+![midnight-blurple--poster](./assets/midnight-blurple--poster.jpg)
 
 # midnight-blurple
 
@@ -6,14 +6,14 @@ a darkened discord theme with rounded corners and using blurple as accent color.
 
 forked from the [midnight-discord](https://github.com/refact0r/midnight-discord) theme because I wanted to add my own fixes and UI magic
 
-<img width=800 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--home-friends.png"><br>*Zoom level at 125%*
+![midnight-blurple--home-friends](./assets/midnight-blurple--home-friends.png)<br>*Zoom level at 125%*
 
 ## nice things
 
 | description | preview |
 |:-|:-|
-| `animated context menu`<br>a quick animation so that it looks cool<br>and not get in the way | <img width=360 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--context-menu-animation.gif"><br>*Zoom level at 125%, colors are fudged because of the gif format* |
-| `elevated dm call messages`<br>to differentiate them from the other messages | <img width=480 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--dm-call-message.png"><br>*Zoom level at 125%* |
+| `animated context menu`<br>a quick animation so that it looks cool and not get in the way | <img width=360 src="./assets/midnight-blurple--context-menu-animation.gif" alt="midnight-blurple--context-menu-animation"><br>*Zoom level at 125%, colors are fudged because of the gif format* |
+| `elevated dm call messages`<br>to differentiate them from the other messages | ![midnight-blurple--dm-call-message](./assets/midnight-blurple--dm-call-message.png)<br>*Zoom level at 125%* |
 
 ## install
 
