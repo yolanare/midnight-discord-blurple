@@ -319,6 +319,9 @@ path[fill='var(--white-500)'] {
 	color: var(--accent-2);
 	line-height: 16px;
 }
+.selected_a523ff.item__48dda /* poll votes categories popup selected */ {
+	background-color: var(--active);
+}
 
 /* remove shadows */
 #app-mount .header_aac16f /* gif picker */ {
