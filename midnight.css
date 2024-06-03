@@ -894,7 +894,7 @@ button.button_ae40a4 /* make user panel buttons round */ {
 .menu__088f7 {
 	transform-origin: top;
 	animation: fade_in 0.225s ease forwards,
-			   rc_menu-open 0.265s 0.01s cubic-bezier(0.4, 0.6, 0, 1);
+			   rc_menu-open 0.255s 0.01s cubic-bezier(0.4, 0.6, 0, 1);
 }
 .menu__088f7 .menu__088f7 {
 	animation-name: fade_in, rc_menu-open-sub;
@@ -903,11 +903,11 @@ button.button_ae40a4 /* make user panel buttons round */ {
 
 @keyframes rc_menu-fade_in {
 	0%   { transform: translate3d(0, -100%, 0); }
-	35%  { transform: translate3d(0, -86%, 0); }
-	46%  { transform: translate3d(0, -70%, 0); }
-	50%  { transform: translate3d(0, -52%, 0); }
-	68%  { transform: translate3d(0, -40%, 0); }
-	82%  { transform: translate3d(0, -25%, 0); }
+	30%  { transform: translate3d(0, -86%, 0); }
+	41%  { transform: translate3d(0, -70%, 0); }
+	45%  { transform: translate3d(0, -52%, 0); }
+	65%  { transform: translate3d(0, -40%, 0); }
+	80%  { transform: translate3d(0, -25%, 0); }
 	100% { transform: translate3d(0, 0, 0); }
 }
 .menu__088f7 {
@@ -923,7 +923,7 @@ button.button_ae40a4 /* make user panel buttons round */ {
 	width: 100%;
 	height: 200%;
 	background: linear-gradient(0deg, var(--bg-3) 55%, transparent);
-	animation: rc_menu-fade_in 0.375s 0.01s linear both; /* cubic-bezier(0.4, 0.2, 0.2, 0.8) */
+	animation: rc_menu-fade_in 0.35s 0.025s linear both; /* cubic-bezier(0.4, 0.2, 0.2, 0.8) */
 	pointer-events: none;
 	user-select: none;
 }
