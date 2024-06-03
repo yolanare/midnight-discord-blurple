@@ -1,4 +1,4 @@
-<img width=800 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple-poster.jpg">
+<img width=800 src="https://yolanare.github.io/midnight-discord-blurple/assets/midnight-blurple--poster.jpg">
 
 # midnight-blurple
 
@@ -16,7 +16,7 @@ forked from the [midnight-discord](https://github.com/refact0r/midnight-discord)
 
 ## install
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > make sure to enable dark mode in discord settings for the theme to apply properly! (if you want light mode customize the theme color variables)
 
 #### betterdiscord (or client with local theme folder)
