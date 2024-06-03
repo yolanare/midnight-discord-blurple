@@ -1273,7 +1273,7 @@ html.theme-light,
     --red-900-hsl: 0 calc(var(--saturation-factor, 1) * 70%) 7.8%;
 
 	--brand-experiment-15a: var(--mention); /* background of reacted reactions */
-	--brand-360: var(--accent-2); /* invite text */
+	--brand-360: var(--accent-4); /* invite text */
 
 	--primary-500: var(--bg-2); /* progress bars */
 	--primary-600: var(--bg-3); /* delete message preview */
