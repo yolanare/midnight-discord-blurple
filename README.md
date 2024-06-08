@@ -19,7 +19,7 @@ forked from the [midnight-discord](https://github.com/refact0r/midnight-discord)
 
 | feature | preview |
 |:-|:-|
-| `PinDMS`<br>if you select this default color for a category, it will instead use the theme's headings color so it looks more consistent | ![midnight-blurple--pindms-color-match](./assets/midnight-blurple--pindms-color-match.png) |
+| `PinDMs`<br>if you select this default color for a category, it will instead use the theme's headings color so it looks more consistent | ![midnight-blurple--pindms-color-match](./assets/midnight-blurple--pindms-color-match.png) |
 
 # install
 
