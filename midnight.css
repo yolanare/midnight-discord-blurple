@@ -141,11 +141,11 @@
 #app-mount .searchFilter_b0fa94 /* search filter */ {
 	background: var(--bg-1);
 }
-.message_ccca67.isSystemMessage__0f7c5 .contents_d3ae0d, /* dm call */
+div[class*="message_"][class*="systemMessage_"] div[class^="contents_"], /* dm call */
 .wrapperAudio__178e9 /* audio file outer bg */ {
 	background-color: hsl(var(--black-500-hsl)/.225) !important;
 }
-.message_ccca67.isSystemMessage__0f7c5.mentioned_fa6fd2 .contents_d3ae0d /* dm call mention */ {
+div[class*="message_"][class*="systemMessage_"][class*="mentioned_"] div[class^="contents_"] /* dm call mention */ {
 	background-color: hsl(var(--black-500-hsl)/.35) !important;
 }
 .wrapperAudio__178e9 { /* audio file border */
@@ -515,7 +515,8 @@ a[href="https://support.discord.com"] /* hide help */
 }
 
 /* more rounded corners */
-.messagesPopoutWrap_ac90a2 /* inbox, pinned messages popout */, .recentMentionsPopout__40c54,
+.messagesPopoutWrap_ac90a2 /* inbox, pinned messages popout */,
+.recentMentionsPopout__40c54,
 .container_e664f3 /* thread popout */,
 .menu_d90b3d .item_d90b3dd /* server option popout */,
 .userPopoutOuter_c69a7b /* user profile popout */,
@@ -896,11 +897,11 @@ button.button_f67531 /* make user panel buttons round */ {
 }
 
 /* prettier dm call messages */
-.message_ccca67.isSystemMessage__0f7c5 {
+div[class*="message_"][class*="systemMessage_"] {
 	padding-left: 16px !important;
 	padding-right: 16px !important;
 }
-.message_ccca67.isSystemMessage__0f7c5 .contents_d3ae0d {
+div[class*="message_"][class*="systemMessage_"] div[class^="contents_"] {
 	margin: 8px 0;
 	padding: 16px;
 	padding-left: var(--custom-message-margin-left-content-cozy);
@@ -923,12 +924,12 @@ button.button_f67531 /* make user panel buttons round */ {
 	0% { transform: scaleY(0.3); }
 	100% { transform: scaleY(1); }
 }
-.menu__088f7 {
+div[class^="menu_"] {
 	transform-origin: top;
 	animation: fade_in 0.225s ease forwards,
 			   rc_menu-open 0.255s 0.01s cubic-bezier(0.4, 0.6, 0, 1);
 }
-.menu__088f7 .menu__088f7 {
+div[class^="menu_"] div[class^="menu_"] {
 	animation-name: fade_in, rc_menu-open-sub;
 	animation-timing-function: ease, cubic-bezier(0.5, 0.5, 0, 1);
 }
@@ -942,12 +943,12 @@ button.button_f67531 /* make user panel buttons round */ {
 	80%  { transform: translate3d(0, -25%, 0); }
 	100% { transform: translate3d(0, 0, 0); }
 }
-.menu__088f7 {
+div[class^="menu_"] {
 	overflow: hidden;
 	position: relative;
 	/* border-radius: var(--roundness-m); */
 }
-.menu__088f7::after {
+div[class^="menu_"]::after {
 	content: "";
 	position: absolute;
 	top: 100%;
@@ -959,11 +960,11 @@ button.button_f67531 /* make user panel buttons round */ {
 	pointer-events: none;
 	user-select: none;
 }
-.menu__088f7 .menu__088f7::after {
+div[class^="menu_"] div[class^="menu_"]::after {
 	animation-delay: 0.03s;
 }
-:root.reduce-motion .menu__088f7,
-:root.reduce-motion .menu__088f7::after {
+:root.reduce-motion div[class^="menu_"],
+:root.reduce-motion div[class^="menu_"]::after {
 	animation: none;
 }
 
