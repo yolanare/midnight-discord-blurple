@@ -13,7 +13,7 @@ forked from the [midnight-discord](https://github.com/refact0r/midnight-discord)
 | feature | preview |
 |:-|:-|
 | `animated context menu`<br>a quick animation so that it looks cool and also to not get in the way | <img width=360 src="./assets/midnight-blurple--context-menu-animation.gif" alt="midnight-blurple--context-menu-animation"><br>*Zoom level at 125%, colors are fudged because of the gif format* |
-| `elevated dm call messages`<br>to differentiate them from the other messages | ![midnight-blurple--dm-call-message](./assets/midnight-blurple--dm-call-message.png)<br>*Zoom level at 125%* |
+| `elevated system messages`<br>to differentiate them from the other messages | ![midnight-blurple--dm-call-message](./assets/midnight-blurple--dm-call-message.png)<br>*Zoom level at 125%* |
 
 ## vencord plugins added support
 
