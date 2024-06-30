@@ -815,6 +815,7 @@ div[class*="peopleColumn_"] div[class*="searchBar_"] /* search bar Friends */,
 	width: 4px;
 	border-radius: 4px;
 	margin-left: 4px;
+	transition: height 0.035s ease-in !important;
 }
 
 /* horizontal server list fix */
