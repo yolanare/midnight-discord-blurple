@@ -134,7 +134,11 @@ div[class*="peopleColumn_"] div[class*="searchBar_"] /* search bar Friends */ {
 .folder_bc7085.hover_bc7085 /* folder opened on hover */ {
 	background: var(--bg-2);
 }
-#app-mount *[class*="outer_"][class*="interactive_"]:hover, #app-mount *[class*="outer_"][class*=" active_"] /* friend activity cards on hover */ {
+*[class^="nowPlayingColumn_"] *[class*="itemCard_"] /* friend activity cards */ {
+	background: var(--bg-3);
+}
+*[class^="nowPlayingColumn_"] *[class*="itemCard_"][class*="interactive_"]:hover /* friend activity cards hover */,
+*[class^="nowPlayingColumn_"] *[class*="itemCard_"][class*=" active_"] /* friend activity cards active */ {
 	background: hsl(var(--black-500-hsl)/.25);
 }
 #app-mount .searchAnswer_b0fa94, /* search filter answer */
