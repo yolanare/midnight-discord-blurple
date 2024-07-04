@@ -613,6 +613,20 @@ div[class*="peopleColumn_"] div[class*="searchBar_"] /* search bar Friends */,
 	border-radius: 50%;
 }
 
+/* user panels : let elements overflow outside (like Quests) */
+section[class*="panels_"] /* user panels */ {
+	overflow: visible;
+	z-index: 1100; /* on top of scroller overflow shadow */
+}
+section[class*="panels_"] > *:first-child,
+section[class*="panels_"] > *:first-child > div[class*="contentWrapper_"],
+section[class*="panels_"] > *:first-child > div[class*="contentWrapper_"] > div[class*="content_"] {
+	border-radius: var(--roundness-xl) var(--roundness-xl) 0 0 !important;
+}
+section[class*="panels_"] > *:last-child {
+	border-radius: 0 0 var(--roundness-xl) var(--roundness-xl) !important;
+}
+
 /* separate guilds panel background */
 .guilds_a4d4d9 {
 	background: var(--bg-4);
