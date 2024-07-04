@@ -616,8 +616,12 @@ div[class*="peopleColumn_"] div[class*="searchBar_"] /* search bar Friends */,
 /* user panels : let elements overflow outside (like Quests) */
 section[class*="panels_"] /* user panels */ {
 	overflow: visible;
-	z-index: 1100; /* on top of scroller overflow shadow */
+	z-index: 2; /* on top of scroller overflow shadow */
 }
+div[class*="sidebar_"] > nav {
+	z-index: 1; /* under */
+}
+
 section[class*="panels_"] > *:first-child,
 section[class*="panels_"] > *:first-child > div[class*="contentWrapper_"],
 section[class*="panels_"] > *:first-child > div[class*="contentWrapper_"] > div[class*="content_"] {
