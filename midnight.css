@@ -726,7 +726,7 @@ section[class*="panels_"] > *:last-child {
 	background: transparent;
 }
 /* bottom */
-*[class*="guilds_"]::after,
+/* *[class*="guilds_"]::after, */
 *[class*="membersWrap_"]::after,
 *[class*="sidebar_"] > *[class*="container_"]::after,
 *[class*="privateChannels_"]::after {
