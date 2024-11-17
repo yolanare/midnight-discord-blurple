@@ -128,6 +128,7 @@ div[class*="soundButton_"] /* soundboard buttons */,
 }
 div[class*="guilds_"] div[class*="listItem_"] /* server list bottom buttons alignement */ {
 	margin-bottom: 0 !important;
+    margin-top: 2px !important;
 }
 .sidebarContainer_a3a4ce, .container_a56260, .contentContainer_a56260 /* quests page */ {
 	background-color: var(--bg-4) !important;
@@ -1061,12 +1062,12 @@ div[class*="message_"][class*="systemMessage_"] div[class^="contents_"] {
 	0% { transform: scaleY(0.3); }
 	100% { transform: scaleY(1); }
 }
-div[class^="menu_"] {
+div[role="menu"][class*="menu_"] {
 	transform-origin: top;
 	animation: fade_in 0.225s ease forwards,
 			   rc_menu-open 0.255s 0.01s cubic-bezier(0.4, 0.6, 0, 1);
 }
-div[class^="menu_"] div[class^="menu_"] {
+div[role="menu"][class*="menu_"][class*="submenu_"] {
 	animation-name: fade_in, rc_menu-open-sub;
 	animation-timing-function: ease, cubic-bezier(0.5, 0.5, 0, 1);
 }
@@ -1080,12 +1081,12 @@ div[class^="menu_"] div[class^="menu_"] {
 	80%  { transform: translate3d(0, -25%, 0); }
 	100% { transform: translate3d(0, 0, 0); }
 }
-div[class^="menu_"] {
+div[role="menu"][class*="menu_"] {
 	overflow: hidden;
 	position: relative;
 	/* border-radius: var(--roundness-m); */
 }
-div[class^="menu_"]::after {
+div[role="menu"][class*="menu_"]::after {
 	content: "";
 	position: absolute;
 	top: 100%;
@@ -1097,11 +1098,11 @@ div[class^="menu_"]::after {
 	pointer-events: none;
 	user-select: none;
 }
-div[class^="menu_"] div[class^="menu_"]::after {
+div[role="menu"][class*="menu_"][class*="submenu_"]::after {
 	animation-delay: 0.03s;
 }
-:root.reduce-motion div[class^="menu_"],
-:root.reduce-motion div[class^="menu_"]::after {
+:root.reduce-motion div[role="menu"][class*="menu_"],
+:root.reduce-motion div[role="menu"][class*="menu_"]::after {
 	animation: none;
 }
 
