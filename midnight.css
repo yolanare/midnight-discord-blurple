@@ -122,7 +122,8 @@
 #app-mount .uploadModal_f82cc7 /* upload modal */,
 .uploadModal_f82cc7 .footer_f82cc7 /* upload modal footer */,
 .container_a6d69a /* forums page */,
-div[class*="soundButton_"] /* soundboard buttons */ {
+div[class*="soundButton_"] /* soundboard buttons */,
+.circleIconButton_db6521 /* server list buttons */ {
 	background: var(--bg-4);
 }
 .sidebarContainer_a3a4ce, .container_a56260, .contentContainer_a56260 /* quests page */ {
@@ -138,8 +139,7 @@ div[class*="callContainer_"] {
 .navRow_be9398[data-theme=dark] /* add new account bottom */,
 div[class*="peopleColumn_"] div[class*="searchBar_"] /* search bar Friends */,
 .container_ddbb27 /* forum guidelines box */,
-.searchBar_e7c031 /* settings searchbar */,
-.circleIconButton_db6521 /* server list buttons */ {
+.searchBar_e7c031 /* settings searchbar */ {
 	background: var(--bg-3);
 }
 .folderIconWrapper_bc7085[style="background-color: rgba(88, 101, 242, 0.4);"] /* default color closed folders */ {
