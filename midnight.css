@@ -684,7 +684,7 @@ section[class*="panels_"] > *:first-child > div[class*="contentWrapper_"] > div[
 	border-radius: var(--roundness-xl) var(--roundness-xl) 0 0 !important;
 }
 section[class*="panels_"] > *:last-child {
-	border-radius: 0 0 var(--roundness-xl) var(--roundness-xl) !important;
+	border-radius: var(--roundness-xl) var(--roundness-xl) !important;
 }
 
 /* separate guilds panel background */
