@@ -126,6 +126,9 @@ div[class*="soundButton_"] /* soundboard buttons */,
 .circleIconButton_db6521 /* server list buttons */ {
 	background: var(--bg-4);
 }
+div[class*="guilds_"] div[class*="listItem_"] /* server list bottom buttons alignement */ {
+	margin-bottom: 0 !important;
+}
 .sidebarContainer_a3a4ce, .container_a56260, .contentContainer_a56260 /* quests page */ {
 	background-color: var(--bg-4) !important;
 }
