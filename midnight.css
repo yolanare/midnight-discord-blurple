@@ -130,6 +130,7 @@ nav[class*="guilds_"] div[class^="listItem_"] /* server list bottom buttons alig
 	margin-bottom: 0 !important;
     margin-top: 2px !important;
 }
+
 .sidebarContainer_a3a4ce, .container_a56260, .contentContainer_a56260 /* quests page */ {
 	background-color: var(--bg-4) !important;
 }
@@ -156,7 +157,8 @@ div[class*="peopleColumn_"] div[class*="searchBar_"] /* search bar Friends */,
 	background: var(--bg-3);
 }
 *[class^="nowPlayingColumn_"] *[class*="itemCard_"][class*="interactive_"]:hover /* friend activity cards hover */,
-*[class^="nowPlayingColumn_"] *[class*="itemCard_"][class*=" active_"] /* friend activity cards active */ {
+*[class^="nowPlayingColumn_"] *[class*="itemCard_"][class*=" active_"] /* friend activity cards active */,
+div[class^="members_"] *[class^="membersGroup_"] ~ div *[role="listitem"] [class*="container_"]:not(:hover) /* server people activity cards */ {
 	background: hsl(var(--black-500-hsl)/.25);
 }
 #app-mount .searchAnswer_b0fa94 /* search filter answer */,
