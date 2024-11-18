@@ -126,7 +126,7 @@ div[class*="soundButton_"] /* soundboard buttons */,
 .circleIconButton_db6521 /* server list buttons */ {
 	background: var(--bg-4);
 }
-div[class*="guilds_"] div[class*="listItem_"] /* server list bottom buttons alignement */ {
+nav[class*="guilds_"] div[class^="listItem_"] /* server list bottom buttons alignement */ {
 	margin-bottom: 0 !important;
     margin-top: 2px !important;
 }
