@@ -329,7 +329,7 @@ div[class*="tabBar_"] div[class*="addFriend_"][class*="addFriend_"][class*="addF
 }
 .container_cebd1c.checked_cebd1c > .slider_cebd1c > rect /* settings checkbutton circle */,
 .userMenuItem_e1268c path[fill="var(--white-500)"] /* account switcher account hover */,
-.colorDefault_d90b3d.focused_d90b3d path {
+.colorDefault_d90b3d.focused_d90b3d path:not([class^="check_"]) {
 	fill: var(--text-0) !important;
 }
 .closeIcon__967e7 path /* alert banner close icon */ {
