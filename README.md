@@ -26,14 +26,17 @@ forked from the [midnight-discord](https://github.com/refact0r/midnight-discord)
 > [!IMPORTANT]
 > make sure to enable dark mode in discord settings for the theme to apply properly! (if you want light mode customize the theme color variables)
 
-#### betterdiscord (or client with local theme folder)
+### betterdiscord (or client with local theme folder)
 
 1. download [`midnight-blurple.theme.css`](https://yolanare.github.io/midnight-discord-blurple/midnight-blurple.theme.css) from this repo
 2. put the file into your theme folder. (there should be a button to open the theme folder in theme settings)
 
-#### install through link
+### install through link
 
-add `https://yolanare.github.io/midnight-discord-blurple/midnight-blurple.theme.css` to your theme import links
+add this URL to your theme import links :
+```
+https://yolanare.github.io/midnight-discord-blurple/midnight-blurple.theme.css
+```
 
 ## credits
 
