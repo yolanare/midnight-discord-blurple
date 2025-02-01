@@ -1062,7 +1062,7 @@ button.button_f67531 /* make user panel buttons round */ {
 	color: var(--green-360);
 }
 
-nav[class*="guilds_"] div[class^="scroller_"] /* server list buttons spacing */ {
+nav[class*="guilds_"] div[class^="scroller_"] {
     padding-bottom: 8px !important;
 }
 nav[class*="guilds_"] div[class^="listItem_"] /* server list buttons spacing */ {
