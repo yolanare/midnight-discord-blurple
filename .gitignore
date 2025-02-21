@@ -1,2 +1,6 @@
 *.ffs_db
 *.lnk
+
+node_modules/
+
+.env
